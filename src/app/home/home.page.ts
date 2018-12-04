@@ -38,7 +38,7 @@ export class HomePage {
       this.sortItems();
       this.dataService.storeList(this.tasks)
       .then( ( response ) => {
-        // this.showToast('task saved');
+         this.showToast('task saved');
       })
       .catch( (error) => {
         console.log( error );
@@ -141,6 +141,7 @@ export class HomePage {
     const toast = await this.toaster.create({
       message: message,
       position: 'bottom'
+      duration: 1000
     });
     toast.present();
   }

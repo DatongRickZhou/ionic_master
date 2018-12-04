@@ -13,7 +13,7 @@
     </ion-button>
   </form>
 <ion-grid>
-  <ion-row *ngFor = "let item of tasks" (click)="changeStatus(item.date)">
+  <ion-row *ngFor = "let item of tasks" (click)="changeStatus(item.date)" [class]="item.status?'done' : 'not-done'">
     <ion-col size="2">
       <ion-checkbox [checked] = 'item.status' ></ion-checkbox>
       </ion-col>
@@ -31,4 +31,5 @@
       </ion-button>
       </ion-col>
       </ion-grid>
+
 </ion-content>

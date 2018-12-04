@@ -20,3 +20,10 @@ ion-item.task.done{
 ion-item h2.name{
   font-weight: 400;
 }
+ion-row.done{
+  --background:aliceblue;
+  opacity: 0.5;
+  h2.name{
+    text-decoration: line-through;
+  }
+}
