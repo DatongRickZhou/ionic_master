@@ -138,7 +138,7 @@ export class HomePage {
   }
 
   async showToast(message:string){
-    const toast = await this.toastController.create({
+    const toast = await this.toaster.create({
       message: message,
       position: 'bottom'
     });
